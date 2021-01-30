@@ -4,7 +4,7 @@ while index <= 5
 	puts index
 	index = index + 1 # ruby 中没有 var++  var-- 写法
 end
-# ++ -- 的写法不起作用
+# ++var --var 的写法不起作用
 puts index # 打印 6
 puts ++index # 同样打印 6
 
@@ -18,4 +18,10 @@ puts '迭代字母表'
 letter = ['a','b','c','d','e']
 for l in letter
 	puts l
+end
+# 迭代 Hash 中的 entry 键值对。想想Java写同样的逻辑有多啰嗦！
+puts '迭代hash数据结构'
+person = {name: 'johnson', height: '167cm'}
+person.each do |key, value|
+  puts "#{key} is #{value}"
 end

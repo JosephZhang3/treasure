@@ -1,7 +1,7 @@
 conditionA = true
 conditionB = false
 
-# AND
+# IF AND
 if conditionA and conditionB
 	puts 'real'
 elsif conditionB
@@ -13,13 +13,13 @@ else
 end
 
 
-# OR
+# IF OR
 if conditionA or conditionB
 	puts 'one of them is real'
 end
 
 
-# switch
+# SWITCH
 def testSwitch(today)
 	case today
 	when 'Mon'
