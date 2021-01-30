@@ -8,4 +8,5 @@ def fact(n)
   end
 end
 
+# 从命令行接收第一个参数
 puts fact(ARGV[0].to_i)
