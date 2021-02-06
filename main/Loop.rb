@@ -25,3 +25,14 @@ person = {name: 'johnson', height: '167cm'}
 person.each do |key, value|
   puts "#{key} is #{value}"
 end
+
+def pow(base_num, pow_num)
+    result = 1
+    pow_num.times do |index|
+    	result = result * base_num
+    end
+    
+    return result # just is base_num ^ pow_num
+end
+
+puts pow(5,3)
