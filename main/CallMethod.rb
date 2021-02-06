@@ -5,13 +5,6 @@ end
 puts say_goodnight("zebulon")
 
 
-# 全局变量
-$global_var = "global foo"
-# 局部变量
-@instance_var = "local bar"
-puts "#{$global_var}, #{@instance_var}"
-
-
 # 给方法参数设置缺省值
 def testDefaultParams(name='anonymity',age=-1)
 	puts 'Hi ' + name + ', your age are ' + age.to_s

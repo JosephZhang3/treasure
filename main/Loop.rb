@@ -19,7 +19,7 @@ letter = ['a','b','c','d','e']
 for l in letter
 	puts l
 end
-# 迭代 Hash 中的 entry 键值对。想想Java写同样的逻辑有多啰嗦！
+# 迭代 Hash 中的键值对。想想Java写同样的逻辑有多啰嗦！
 puts '迭代hash数据结构'
 person = {name: 'johnson', height: '167cm'}
 person.each do |key, value|
