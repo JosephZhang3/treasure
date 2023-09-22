@@ -15,6 +15,7 @@ module Modu
 		end
 	end
 	
+	# TODO ?
 	def self.included(receiver)
 		receiver.extend         ClassMethods
 		receiver.send :include, InstanceMethods

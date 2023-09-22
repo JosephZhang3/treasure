@@ -1,5 +1,4 @@
 # 类似java中的HashMap存储键值对
-my_asset = Hash.new(0)
 my_asset = {
   'thinkpad computer' => '4500',
   'iphonePrice' => 4800,
@@ -7,7 +6,9 @@ my_asset = {
   'books and others' => 'can not realize',
   :special => 'spec'
 }
-# 使用中括号属性法直接取值，而不是调用get方法
+
+
+# 使用中括号属性法直接取值，而不是调用get方法。像JavaScript
 print my_asset['iphonePrice']
 print "\n"
 puts my_asset[:special]
@@ -18,18 +19,19 @@ print "\n"
 
 # 初始化所有key-value的value为0
 counter = Hash.new(0)
-# 打印得到 0
-print counter['noexist']
+print counter['noexist'] # 输出 0
 print "\n"
-# 给 key：noexist 设置 value：1
+# 创建一个 K-V 映射
 counter['noexist'] = counter['noexist'] + 1
-print counter['noexist']
+print counter
 print "\n"
 
 
+# 当用 : 而不是 => 分隔key和value时，初始化得到的hash的key都是symbol符号
 family = {
-	'me': 'jianghao.zhang',
-	nil: 'wife?',
-	# nil: 'other' #  警告 key nil is duplicated and overwritten
+  'me': 'jianghao.zhang',
+  'age': 30,
+  nil: 'val of nil key',
+  # nil: 'other' #  警告 key nil is duplicated and overwritten
 }
-puts family
+p family

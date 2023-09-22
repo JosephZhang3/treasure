@@ -4,8 +4,7 @@
 print "Hello"
 print " world."
 puts
-
-puts 'You are a good man'
+puts 'one line'
 puts 'a new line'
 
 puts "---- \\"
