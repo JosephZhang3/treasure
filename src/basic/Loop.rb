@@ -22,9 +22,14 @@ letter = ['a', 'b', 'c', 'd', 'e']
 for l in letter
   print l
 end
-puts
 
-puts 'each方法迭代字母a到e _1表示取 {} block块的第一个参数'
+puts "\nloop迭代字母a到e"
+long_enum = letter.to_enum
+loop do
+  print long_enum.next
+end
+
+puts "\neach方法迭代字母a到e _1表示取 {} block块的第一个参数"
 letter.each { print _1 }
 puts
 
@@ -50,8 +55,8 @@ def pow(base_num, pow_num)
   pow_num.times { || result *= base_num }
   result
 end
-
 puts pow(5, 3)
+
 # 使用 do while 内置循环结构实现
 def pow_v2(base_num, pow_num)
   result = 1

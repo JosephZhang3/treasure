@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 # print 不换行，puts 自动换行
 print "Hello"
 print " world."
