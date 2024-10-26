@@ -1,4 +1,4 @@
-
+Code of book:《Programming Ruby 3.2》
 
 * ruby方法返回的值，默认是最后一个被求值的表达式的值，可以返回多个值，这一点一般静态语言都做不到。
 * 表达式内插 expression interpolation， `#{expression}` 会被"expression"的值替代掉。
